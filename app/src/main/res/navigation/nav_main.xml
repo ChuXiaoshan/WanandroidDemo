@@ -7,13 +7,17 @@
 
     <keep_state_fragment
         android:id="@+id/action_home"
-        android:name="com.cxsplay.wad.main.HomeFragment"
+        android:name="com.cxsplay.wad.main.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action
-            android:id="@+id/action_action_home_to_detailFragment"
-            app:destination="@id/detailFragment"
-            app:popUpTo="@+id/action_home" />
+            android:id="@+id/action_action_home_to_detail1Fragment"
+            app:destination="@id/detail1Fragment" />
+
+        <action
+            android:id="@+id/aaa"
+            app:destination="@id/detail1Fragment" />
+
     </keep_state_fragment>
 
     <keep_state_fragment
@@ -28,10 +32,9 @@
         android:label="fragment_my"
         tools:layout="@layout/fragment_my" />
 
-    <fragment
-        android:id="@+id/detailFragment"
-        android:name="com.cxsplay.wad.DetailFragment"
-        android:label="DetailFragment"
-        tools:layout="@layout/fragment_detail" />
+    <keep_state_fragment
+        android:id="@+id/detail1Fragment"
+        android:name="com.cxsplay.wad.main.home.Detail1Fragment"
+        android:label="Detail1Fragment" />
 
 </navigation>

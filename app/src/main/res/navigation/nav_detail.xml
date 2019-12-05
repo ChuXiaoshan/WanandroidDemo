@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_detail"
+    app:startDestination="@+id/detail1Fragment">
+
+    <fragment
+        android:id="@+id/detail1Fragment"
+        android:name="com.cxsplay.wad.main.home.Detail1Fragment"
+
+        android:label="Detail1Fragment">
+        <action
+            android:id="@+id/action_detail1Fragment2_to_detail2Fragment"
+            app:destination="@id/detail2Fragment" />
+        <action
+            android:id="@+id/action_detail1Fragment_to_detail3Fragment"
+            app:destination="@id/detail3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail2Fragment"
+        android:name="com.cxsplay.wad.main.home.Detail2Fragment"
+        android:label="Detail2Fragment">
+        <action
+            android:id="@+id/action_detail2Fragment_to_detail3Fragment"
+            app:destination="@id/detail3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail3Fragment"
+        android:name="com.cxsplay.wad.main.home.Detail3Fragment"
+        android:label="Detail3Fragment" />
+</navigation>

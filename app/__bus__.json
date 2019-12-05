@@ -1,0 +1,10 @@
+{
+  "BusUtilsClass": "com.blankj.utilcode.util.BusUtils",
+  "rightBus": {
+    "TagNoParam": [
+      "{ desc: com.cxsplay.wad.main.home.HomeFragment#ddd() }",
+      "{ desc: com.cxsplay.wad.MainActivity#ddd() }"
+    ]
+  },
+  "wrongBus": {}
+}
