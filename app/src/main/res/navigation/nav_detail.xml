@@ -7,14 +7,22 @@
     <fragment
         android:id="@+id/detail1Fragment"
         android:name="com.cxsplay.wad.main.home.Detail1Fragment"
-
         android:label="Detail1Fragment">
         <action
             android:id="@+id/action_detail1Fragment2_to_detail2Fragment"
-            app:destination="@id/detail2Fragment" />
+            app:destination="@id/detail2Fragment"
+            app:enterAnim="@anim/v_fragment_enter"
+            app:exitAnim="@anim/v_fragment_exit"
+            app:popEnterAnim="@anim/v_fragment_pop_enter"
+            app:popExitAnim="@anim/v_fragment_pop_exit" />
+
         <action
             android:id="@+id/action_detail1Fragment_to_detail3Fragment"
-            app:destination="@id/detail3Fragment" />
+            app:destination="@id/detail3Fragment"
+            app:enterAnim="@anim/v_fragment_enter"
+            app:exitAnim="@anim/v_fragment_exit"
+            app:popEnterAnim="@anim/v_fragment_pop_enter"
+            app:popExitAnim="@anim/v_fragment_pop_exit" />
     </fragment>
 
     <fragment
@@ -23,7 +31,11 @@
         android:label="Detail2Fragment">
         <action
             android:id="@+id/action_detail2Fragment_to_detail3Fragment"
-            app:destination="@id/detail3Fragment" />
+            app:destination="@id/detail3Fragment"
+            app:enterAnim="@anim/v_fragment_enter"
+            app:exitAnim="@anim/v_fragment_exit"
+            app:popEnterAnim="@anim/v_fragment_pop_enter"
+            app:popExitAnim="@anim/v_fragment_pop_exit" />
     </fragment>
     <fragment
         android:id="@+id/detail3Fragment"

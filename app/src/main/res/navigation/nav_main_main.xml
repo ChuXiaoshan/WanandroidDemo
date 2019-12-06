@@ -6,15 +6,5 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.cxsplay.wad.MainFragment"
-        android:label="MainFragment">
-
-<!--        <action-->
-        <!--            android:id="@+id/hehe"-->
-        <!--            app:destination="@id/nav_main_main" />-->
-
-        <action
-            android:id="@+id/aaa"
-            app:destination="@id/detail1Fragment" />
-
-    </fragment>
+        android:label="MainFragment"/>
 </navigation>

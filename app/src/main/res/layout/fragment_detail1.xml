@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#443477"
     tools:context=".main.home.Detail1Fragment">
 
     <EditText

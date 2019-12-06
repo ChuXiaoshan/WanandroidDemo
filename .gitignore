@@ -7,3 +7,4 @@
 /captures
 .externalNativeBuild
 .cxx
+__bus__.json

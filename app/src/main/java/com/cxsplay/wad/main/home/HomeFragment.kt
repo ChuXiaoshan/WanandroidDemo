@@ -1,16 +1,15 @@
 package com.cxsplay.wad.main.home
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.blankj.utilcode.util.BusUtils
 import com.blankj.utilcode.util.LogUtils
-import com.blankj.utilcode.util.ToastUtils
 import com.cxsplay.wad.MainActivity
 import com.cxsplay.wad.R
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -38,29 +37,9 @@ class HomeFragment : Fragment() {
 
     private fun init() {
         btn.setOnClickListener {
-            //            startActivity(Intent(requireActivity(), DetailActivity::class.java))
-//            findNavController(requireActivity(), R.id.fm_main_main).navigate(R.id.aaa)
-            BusUtils.post(MainActivity.TAG_NO_PARAM)
-            ToastUtils.showShort("click")
+            startActivity(Intent(requireActivity(), DetailActivity::class.java))
         }
     }
-
-    @BusUtils.Bus(tag = MainActivity.TAG_NO_PARAM)
-    fun ddd() {
-        LogUtils.d("----ddd")
-        findNavController().navigate(R.id.aaa)
-    }
-
-    override fun onStart() {
-        super.onStart()
-        BusUtils.register(this)
-    }
-
-    override fun onStop() {
-        super.onStop()
-        BusUtils.unregister(this)
-    }
-
 
     override fun onResume() {
         super.onResume()
