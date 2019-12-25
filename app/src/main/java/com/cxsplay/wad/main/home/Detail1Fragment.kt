@@ -17,11 +17,13 @@ import kotlinx.android.synthetic.main.fragment_detail1.*
 class Detail1Fragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        LogUtils.d("---onCreateView---")
         return inflater.inflate(R.layout.fragment_detail1, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        LogUtils.d("---onActivityCreated---")
         init()
     }
 
